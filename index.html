@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenAcres Realty — Plots &amp; Homes for Sale</title>
+    <meta name="description" content="GreenAcres Realty helps you buy verified plots, apartments and independent homes. Clear titles, transparent pricing, EMI support and site visits across all major cities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+        <a href="#home" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5 12 3l9 7.5"></path>
+                    <path d="M5 9.5V21h14V9.5"></path>
+                    <path d="M10 21v-6h4v6"></path>
+                </svg>
+            </span>
+            <span class="brand-text">GreenAcres<em>Realty</em></span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#listings">Listings</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="nav-cta">Book a Visit</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#listings">Listings</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Book a Visit</a>
+    <div class="mobile-nav-foot">
+        <a href="tel:+919876543210">+91 98765 43210</a>
+        <a href="mailto:sales@greenacresrealty.com">sales@greenacresrealty.com</a>
+    </div>
+</div>
+
+<main>
+
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+<section class="hero" id="home">
+    <div class="hero-media" aria-hidden="true">
+        <div class="hero-slide is-active" style="background-image:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1920&q=80')"></div>
+        <div class="hero-tint"></div>
+        <div class="hero-lines"></div>
+        <span class="hero-orb orb-1"></span>
+        <span class="hero-orb orb-2"></span>
+    </div>
+
+    <div class="container hero-inner">
+        <div class="hero-copy">
+        <span class="hero-badge" data-reveal data-delay="0.05s"><i class="pulse-dot"></i>RERA Registered &middot; Est. 2009</span>
+        <h1 data-reveal-words>Find a <em>plot</em> or a <em>home</em> you can trust.</h1>
+        <p class="hero-text" data-reveal data-delay="0.75s">Verified land titles, honest pricing and end-to-end support — from your first site visit to the moment you receive the keys.</p>
+
+        <form class="search-card" id="searchForm" data-reveal data-delay="0.9s">
+            <div class="search-tabs" role="tablist">
+                <button type="button" class="search-tab active" data-type="Plot"><span>Plots</span></button>
+                <button type="button" class="search-tab" data-type="Home"><span>Homes</span></button>
+                <button type="button" class="search-tab" data-type="Commercial"><span>Commercial</span></button>
+            </div>
+            <div class="search-fields">
+                <div class="field">
+                    <label for="searchCity">Location</label>
+                    <input type="text" id="searchCity" placeholder="City, locality or project" required>
+                </div>
+                <div class="field">
+                    <label for="searchBudget">Budget</label>
+                    <select id="searchBudget">
+                        <option value="">Any budget</option>
+                        <option>Under &#8377;25 Lakh</option>
+                        <option>&#8377;25 &#8211; 50 Lakh</option>
+                        <option>&#8377;50 Lakh &#8211; 1 Cr</option>
+                        <option>&#8377;1 Cr and above</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="searchType">Property type</label>
+                    <select id="searchType">
+                        <option value="">Any type</option>
+                        <option>Residential Plot</option>
+                        <option>Apartment</option>
+                        <option>Independent House</option>
+                        <option>Villa</option>
+                        <option>Commercial Space</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary search-btn">Search</button>
+            </div>
+        </form>
+
+        <ul class="hero-stats">
+            <li data-reveal data-delay="1.05s"><strong data-count="4200">0</strong><span>Plots &amp; homes sold</span></li>
+            <li data-reveal data-delay="1.15s"><strong data-count="38">0</strong><span>Projects delivered</span></li>
+            <li data-reveal data-delay="1.25s"><strong data-count="17">0</strong><span>Years of trust</span></li>
+        </ul>
+        </div>
+    </div>
+
+    <aside class="hero-float float-a" aria-hidden="true">
+        <span class="hf-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
+        </span>
+        <span class="hf-text"><strong>41-point title check</strong><small>Report shared before you pay</small></span>
+    </aside>
+
+    <aside class="hero-float float-b" aria-hidden="true">
+        <span class="hf-avatars"><i></i><i></i><i></i></span>
+        <span class="hf-text"><strong>4.8 out of 5</strong><small>1,100 verified buyers</small></span>
+    </aside>
+
+    <div class="hero-cue" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <i class="hero-cue-line"></i>
+    </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+        <span>Whitefield</span><i>&#9670;</i>
+        <span>Sarjapur Road</span><i>&#9670;</i>
+        <span>Electronic City</span><i>&#9670;</i>
+        <span>Yelahanka</span><i>&#9670;</i>
+        <span>Mysuru Road</span><i>&#9670;</i>
+        <span>HSR Layout</span><i>&#9670;</i>
+        <span>Jayanagar</span><i>&#9670;</i>
+        <span>Hebbal</span><i>&#9670;</i>
+        <span>Whitefield</span><i>&#9670;</i>
+        <span>Sarjapur Road</span><i>&#9670;</i>
+        <span>Electronic City</span><i>&#9670;</i>
+        <span>Yelahanka</span><i>&#9670;</i>
+        <span>Mysuru Road</span><i>&#9670;</i>
+        <span>HSR Layout</span><i>&#9670;</i>
+        <span>Jayanagar</span><i>&#9670;</i>
+        <span>Hebbal</span><i>&#9670;</i>
+    </div>
+</div>
+
+<section class="trust-strip">
+    <div class="container trust-grid" data-stagger>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#10003;</span>100% verified titles</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#10003;</span>No hidden brokerage</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#10003;</span>Free site visits</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#10003;</span>Home loans from 12 banks</div>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="container about-grid">
+        <div class="about-media reveal">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" alt="Modern family home exterior" loading="lazy">
+            <div class="about-badge">
+                <strong>4,200+</strong>
+                <span>families settled since 2009</span>
+            </div>
+        </div>
+        <div class="about-content reveal">
+            <span class="eyebrow">Who we are</span>
+            <h2 class="section-title">A property company built on paperwork, not promises.</h2>
+            <p>GreenAcres Realty sells residential plots, apartments and independent homes across 22 cities. Every listing we take on passes a 41-point legal due diligence before it ever reaches this page &mdash; title chain, encumbrance certificate, approved layout, development order and land conversion.</p>
+            <p>Our in-house legal and engineering teams handle registration, loan sanction and handover, so you deal with one team instead of five brokers.</p>
+            <ul class="check-list">
+                <li>Clear title report shared before you pay a rupee</li>
+                <li>Physical plots marked, mapped and GPS-tagged</li>
+                <li>Loan assistance with 14 banks and NBFCs</li>
+                <li>Registry, mutation and utility transfers handled in-house</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Talk to an advisor</a>
+        </div>
+    </div>
+</section>
+
+<section class="section listings" id="listings">
+    <div class="container">
+        <header class="section-head reveal">
+            <span class="eyebrow">Featured inventory</span>
+            <h2 class="section-title">Plots and homes on sale now</h2>
+            <p class="section-lead">Live inventory across our 22 city offices. Filter by what you are looking for and shortlist in one tap.</p>
+        </header>
+
+        <div class="filter-bar reveal">
+            <div class="filter-group" id="listingFilters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="plot">Plots</button>
+                <button class="filter-btn" data-filter="house">Houses</button>
+                <button class="filter-btn" data-filter="apartment">Apartments</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+            <select class="sort-select" id="sortListings" aria-label="Sort listings">
+                <option value="featured">Sort: Featured</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div class="listing-grid" id="listingGrid" data-stagger>
+
+            <article class="listing-card reveal" data-category="plot" data-price="1850000" data-featured="1">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Open residential land plot" loading="lazy">
+                    <span class="tag tag-sale">Hot sale</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;18.5 Lakh <span>/ 1,200 sq.ft</span></p>
+                    <h3>Green Valley Layout &mdash; East Facing Plot</h3>
+                    <p class="listing-loc">Sarjapur Road, Bengaluru</p>
+                    <ul class="listing-specs">
+                        <li>1,200 sq.ft</li>
+                        <li>30 ft road</li>
+                        <li>Corner plot</li>
+                        <li>Clear title</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="house" data-price="7400000" data-featured="1">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Independent house with garden" loading="lazy">
+                    <span class="tag">Ready to move</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;74 Lakh <span>/ 2,400 sq.ft</span></p>
+                    <h3>4 BHK Independent House</h3>
+                    <p class="listing-loc">Whitefield, Bengaluru</p>
+                    <ul class="listing-specs">
+                        <li>4 BHK</li>
+                        <li>2,400 sq.ft</li>
+                        <li>Private garden</li>
+                        <li>Covered parking</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="apartment" data-price="5200000" data-featured="0">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Modern apartment living room" loading="lazy">
+                    <span class="tag">New launch</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;52 Lakh <span>/ 1,150 sq.ft</span></p>
+                    <h3>3 BHK in Highland Residences</h3>
+                    <p class="listing-loc">Gachibowli, Hyderabad</p>
+                    <ul class="listing-specs">
+                        <li>3 BHK</li>
+                        <li>Possession Dec 2026</li>
+                        <li>Clubhouse</li>
+                        <li>Bank loan ready</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="plot" data-price="920000" data-featured="0">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80" alt="Green plot near upcoming road" loading="lazy">
+                    <span class="tag">EMI from &#8377;14,900</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;9.2 Lakh <span>/ 1,500 sq.ft</span></p>
+                    <h3>Sobha Silicon Oasis Plots</h3>
+                    <p class="listing-loc">Electronic City, Bengaluru</p>
+                    <ul class="listing-specs">
+                        <li>1,500 sq.ft</li>
+                        <li>Gated layout</li>
+                        <li>Park facing</li>
+                        <li>BMRDA approved</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="commercial" data-price="14500000" data-featured="1">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80" alt="Commercial office space" loading="lazy">
+                    <span class="tag">High rental yield</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;1.45 Cr <span>/ 2,100 sq.ft</span></p>
+                    <h3>Ground Floor Retail Unit</h3>
+                    <p class="listing-loc">Koramangala 5th Block, Bengaluru</p>
+                    <ul class="listing-specs">
+                        <li>2,100 sq.ft</li>
+                        <li>14 ft frontage</li>
+                        <li>Corner unit</li>
+                        <li>9% rental yield</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="house" data-price="6300000" data-featured="0">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="Luxury villa with pool" loading="lazy">
+                    <span class="tag">RERA verified</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;63 Lakh <span>/ 2,800 sq.ft</span></p>
+                    <h3>3 BHK Villa in Palm Meadows</h3>
+                    <p class="listing-loc">Mysuru Road, Bengaluru</p>
+                    <ul class="listing-specs">
+                        <li>3 BHK</li>
+                        <li>2,800 sq.ft</li>
+                        <li>Servant quarters</li>
+                        <li>Row end villa</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="plot" data-price="1200000" data-featured="0">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80" alt="Agricultural land parcel" loading="lazy">
+                    <span class="tag">Best rate</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;12 Lakh <span>/ 2,400 sq.ft</span></p>
+                    <h3>Lakeview Phase II Plots</h3>
+                    <p class="listing-loc">Yelahanka, Bengaluru</p>
+                    <ul class="listing-specs">
+                        <li>2,400 sq.ft</li>
+                        <li>40 ft boulevard</li>
+                        <li>North facing</li>
+                        <li>Registry ready</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="apartment" data-price="3400000" data-featured="0">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Apartment interior with balcony" loading="lazy">
+                    <span class="tag">Immediate shift</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;34 Lakh <span>/ 890 sq.ft</span></p>
+                    <h3>2 BHK in Lakeview Heights</h3>
+                    <p class="listing-loc">Kundalahalli, Bengaluru</p>
+                    <ul class="listing-specs">
+                        <li>2 BHK</li>
+                        <li>890 sq.ft</li>
+                        <li>Lake view</li>
+                        <li>Tenant ready</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="listing-card reveal" data-category="commercial" data-price="26000000" data-featured="0">
+                <div class="listing-media">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80" alt="Office space interior" loading="lazy">
+                    <span class="tag">Long lease</span>
+                    <button class="fav-btn" type="button" aria-label="Save listing" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg>
+                    </button>
+                </div>
+                <div class="listing-body">
+                    <p class="listing-price">&#8377;2.6 Cr <span>/ 4,000 sq.ft</span></p>
+                    <h3>Pre-leased Office Floor</h3>
+                    <p class="listing-loc">HITEC City, Hyderabad</p>
+                    <ul class="listing-specs">
+                        <li>4,000 sq.ft</li>
+                        <li>Fully furnished</li>
+                        <li>5 yr lock-in</li>
+                        <li>8.2% net yield</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden>No listings match this filter yet. Call us and we will find one for you.</p>
+
+        <div class="listings-foot reveal">
+            <a href="#contact" class="btn btn-primary">See all 240+ properties</a>
+        </div>
+    </div>
+</section>
+
+<section class="section services" id="services">
+    <div class="container">
+        <header class="section-head reveal">
+            <span class="eyebrow">What we do</span>
+            <h2 class="section-title">Everything between "interested" and "keys"</h2>
+        </header>
+        <div class="services-grid" data-stagger>
+            <div class="service-card reveal">
+                <span class="service-num">01</span>
+                <h3>Plots &amp; land sales</h3>
+                <p>Residential, agricultural and commercial land in approved layouts, with boundary demarcation and GPS survey done before you pay.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-num">02</span>
+                <h3>Independent homes</h3>
+                <p>Ready and under-construction houses with structural audit, quality score and possession timeline written into the agreement.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-num">03</span>
+                <h3>Apartments &amp; villas</h3>
+                <p>New launches and resale inventory from RERA-verified projects, with sample-home visits before you book.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-num">04</span>
+                <h3>Loan &amp; EMI support</h3>
+                <p>Sanction from 14 banks, paperwork prepared in-house and disbursal coordinated with the seller's advocate.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-num">05</span>
+                <h3>Title &amp; legal due diligence</h3>
+                <p>41 checks covering title chain, EC, land conversion, zoning and litigation history, delivered as a written report.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-num">06</span>
+                <h3>Registry &amp; handover</h3>
+                <p>Sub-registrar visits, stamp duty filing, mutation, khata transfer and electricity connection handled end to end.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section process">
+    <div class="container">
+        <header class="section-head reveal">
+            <span class="eyebrow">How it works</span>
+            <h2 class="section-title">Five steps, no guesswork</h2>
+        </header>
+        <ol class="process-list" data-stagger>
+            <li class="reveal"><span>1</span><h4>Tell us your requirement</h4><p>Budget, location, plot size or configuration. A five-minute call is enough.</p></li>
+            <li class="reveal"><span>2</span><h4>Get a curated shortlist</h4><p>Only options that fit your budget and commute, with the due-diligence report attached.</p></li>
+            <li class="reveal"><span>3</span><h4>Visit the site</h4><p>We arrange free site visits with the land owner or builder, on a weekend if you need it.</p></li>
+            <li class="reveal"><span>4</span><h4>Book at a locked price</h4><p>Price is frozen in writing for 15 days. Loan sanction runs in parallel.</p></li>
+            <li class="reveal"><span>5</span><h4>Registry &amp; keys</h4><p>Our advocate handles registration and the seller pays the agreed cost, not you.</p></li>
+        </ol>
+    </div>
+</section>
+
+<section class="section testimonials" id="testimonials">
+    <div class="container">
+        <header class="section-head reveal">
+            <span class="eyebrow">Customer stories</span>
+            <h2 class="section-title">Rated 4.8 out of 5 by 1,100 buyers</h2>
+        </header>
+        <div class="testimonial-slider reveal" id="testimonialSlider">
+            <button class="slider-btn prev" id="slidePrev" aria-label="Previous review">&#8249;</button>
+            <div class="testimonial-track" id="testimonialTrack">
+                <figure class="testimonial">
+                    <blockquote>We almost bought a 1,200 sq.ft plot in a layout that turned out to be unapproved. GreenAcres flagged it during due diligence and found us a BDA-approved alternative at the same price.</blockquote>
+                    <figcaption><strong>Prakash &amp; Anitha</strong><span>Plots &mdash; Sarjapur Road</span></figcaption>
+                </figure>
+                <figure class="testimonial">
+                    <blockquote>The loan team got my home loan sanctioned in nine days, and the registration was done at the sub-registrar office exactly as promised. I did not visit the office once.</blockquote>
+                    <figcaption><strong>Rohit Menon</strong><span>Apartment &mdash; Whitefield</span></figcaption>
+                </figure>
+                <figure class="testimonial">
+                    <blockquote>What stood out was the site visit. They measured the plot in front of me, showed the survey map on a tablet, and the boundary stones matched the documents.</blockquote>
+                    <figcaption><strong>Shalini Deshpande</strong><span>Plot &mdash; Yelahanka</span></figcaption>
+                </figure>
+                <figure class="testimonial">
+                    <blockquote>We sold our old flat and bought a villa with them end to end. They coordinated the NOC, the loan and the electricity transfer. No hidden brokerage anywhere.</blockquote>
+                    <figcaption><strong>Vikram &amp; Neha</strong><span>Villa &mdash; Mysuru Road</span></figcaption>
+                </figure>
+            </div>
+            <button class="slider-btn next" id="slideNext" aria-label="Next review">&#8250;</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+        <div class="slider-progress" aria-hidden="true"><span id="slideProgress"></span></div>
+    </div>
+</section>
+
+<section class="section faq" id="faq">
+    <div class="container faq-grid">
+        <div class="faq-intro reveal">
+            <span class="eyebrow">Questions</span>
+            <h2 class="section-title">Answers before you ask</h2>
+            <p class="section-lead">Still unsure about something? Call us on <a href="tel:+919876543210">+91 98765 43210</a> and an advisor will walk you through it.</p>
+        </div>
+        <div class="faq-list reveal" id="faqList">
+            <div class="faq-item">
+                <button class="faq-q" type="button">Do you charge brokerage on plots?<span class="faq-icon"></span></button>
+                <div class="faq-a"><p>No. Our margin is built into the listed price, and it is the same for every buyer on that project. What you see on the page is what you pay, plus government charges.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" type="button">What documents are needed to buy a plot?<span class="faq-icon"></span></button>
+                <div class="faq-a"><p>Aadhaar and PAN, passport-size photos, and income proof if you are taking a loan. We file the rest &mdash; EC, title deed, approved plan, conversion certificate and NOC &mdash; on your behalf.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" type="button">Can I pay in instalments for a plot?<span class="faq-icon"></span></button>
+                <div class="faq-a"><p>Yes. Most of our layout projects allow 20% booking, 60% over the registration schedule and 20% on possession. Subscriptions are also available in EMI-linked plans.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" type="button">How long does registration take?<span class="faq-icon"></span></button>
+                <div class="faq-a"><p>Typically 15 to 30 days after loan disbursement, depending on the sub-registrar and sanction status. Our advocate books the slot and tracks the file until the record is updated.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" type="button">Is a site visit really free?<span class="faq-icon"></span></button>
+                <div class="faq-a"><p>Yes, within 25 km of your city. For sites further out we share an unedited walkthrough video with a surveyor on call, or we combine the trip with two other families going the same way.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container contact-grid">
+        <div class="contact-info reveal">
+            <span class="eyebrow light">Book a free consultation</span>
+            <h2 class="section-title">Tell us what you are looking for.</h2>
+            <p class="section-lead">Share your budget and preferred locality. An advisor will call you within 4 working hours with 3 to 5 verified options.</p>
+            <ul class="contact-list">
+                <li><span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a12 12 0 0 0 5 5l1-2 5 2v2c0 1-1 2-2 2A15 15 0 0 1 4 5z"/></svg>
+                </span><div><small>Sales desk</small><a href="tel:+919876543210">+91 98765 43210</a></div></li>
+                <li><span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                </span><div><small>Email</small><a href="mailto:sales@greenacresrealty.com">sales@greenacresrealty.com</a></div></li>
+                <li><span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                </span><div><small>Head office</small><span>2nd Floor, Harmony Plaza, MG Road, Bengaluru 560001</span></div></li>
+                <li><span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                </span><div><small>Open hours</small><span>Mon &ndash; Sat, 9:30 AM to 7:00 PM</span></div></li>
+            </ul>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+            <form class="contact-form" id="enquiryForm" novalidate>
+                <h3>Request a callback</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fName">Full name</label>
+                        <input type="text" id="fName" name="name" placeholder="Your name" required>
+                        <small class="error" data-for="fName"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="fPhone">Phone number</label>
+                        <input type="tel" id="fPhone" name="phone" placeholder="10-digit mobile" required>
+                        <small class="error" data-for="fPhone"></small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fEmail">Email</label>
+                    <input type="email" id="fEmail" name="email" placeholder="you@example.com" required>
+                    <small class="error" data-for="fEmail"></small>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fType">Looking for</label>
+                        <select id="fType" name="type">
+                            <option>Plot</option>
+                            <option>Independent house</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                            <option>Commercial space</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fBudget">Budget</label>
+                        <select id="fBudget" name="budget">
+                            <option>Under &#8377;25 Lakh</option>
+                            <option>&#8377;25 &#8211; 50 Lakh</option>
+                            <option>&#8377;50 Lakh &#8211; 1 Cr</option>
+                            <option>&#8377;1 Cr and above</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fMessage">Message <span class="optional">(optional)</span></label>
+                    <textarea id="fMessage" name="message" rows="4" placeholder="Preferred locality, plot size, timeline..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+                <p class="form-note">We never share your details. No spam calls &mdash; one advisor, one call.</p>
+            </form>
+
+            <div class="form-success" id="formSuccess" hidden>
+                <span class="success-mark" aria-hidden="true">&#10003;</span>
+                <h3>Enquiry received</h3>
+                <p>Thank you. An advisor will call you within 4 working hours with verified options matching your requirement.</p>
+                <button class="btn btn-outline-light" type="button" id="resetForm">Send another enquiry</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="#home" class="brand">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 10.5 12 3l9 7.5"></path>
+                        <path d="M5 9.5V21h14V9.5"></path>
+                        <path d="M10 21v-6h4v6"></path>
+                    </svg>
+                </span>
+                <span class="brand-text">GreenAcres<em>Realty</em></span>
+            </a>
+            <p>Plots, homes and commercial property with verified titles across 22 cities. RERA registered brokerage.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">ig</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="YouTube">yt</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Properties</h4>
+            <a href="#listings">Residential plots</a>
+            <a href="#listings">Independent homes</a>
+            <a href="#listings">Apartments</a>
+            <a href="#listings">Commercial space</a>
+            <a href="#listings">Agricultural land</a>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <a href="#services">Title due diligence</a>
+            <a href="#services">Home loan support</a>
+            <a href="#services">Registry &amp; mutation</a>
+            <a href="#services">NRI property services</a>
+            <a href="#services">Property valuation</a>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#about">About us</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Careers</a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>&copy; 2026 GreenAcres Realty LLP. All rights reserved.</p>
+        <p><a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">RERA</a></p>
+    </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">&#8593;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
